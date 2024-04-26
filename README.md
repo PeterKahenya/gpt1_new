@@ -25,7 +25,9 @@ Our training procedure consists of two stages.
     a probability distribution describing the likelihood of any string) objective. These parameters are trained using 
     stochastic gradient descent. We use a multi-layer Transformer decoder. This model applies a multi-headed self-attention 
     operation over the input context tokens followed by position-wise feedforward layers to produce an output distribution over 
-    target tokens. We use the BooksCorpus dataset [71] for training the language model. It contains over 7,000 unique unpublished 
+    target tokens. 
+    
+    We use the BooksCorpus dataset [71] for training the language model. It contains over 7,000 unique unpublished 
     books from a variety of genres including Adventure, Fantasy, and Romance. Crucially, it contains long stretches of contiguous 
     text, which allows the generative model to learn to condition on long-range information. Our language model achieves a 
     very low token level perplexity of 18.4 on this corpus. 

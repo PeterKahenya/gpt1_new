@@ -3,3 +3,4 @@ spacy
 ftfy
 torch
 ipykernel
+seaborn
