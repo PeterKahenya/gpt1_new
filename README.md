@@ -39,6 +39,7 @@ Our training procedure consists of two stages.
     We used the Adam optimization scheme [27] with a max learning rate of 2.5e-4. The learning rate
     was increased linearly from zero over the first 2000 updates and annealed to 0 using a cosine schedule.
     We train for 100 epochs on minibatches of 64 randomly sampled, contiguous sequences of 512 tokens.
+    
     Since layernorm [2] is used extensively throughout the model, a simple weight initialization of
     N(0,0.02) was sufficient. We used a bytepair encoding (BPE) vocabulary with 40,000 merges [53]
     and residual, embedding, and attention dropouts with a rate of 0.1 for regularization. We also

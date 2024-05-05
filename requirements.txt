@@ -4,3 +4,4 @@ ftfy
 torch
 ipykernel
 seaborn
+torch-summary
